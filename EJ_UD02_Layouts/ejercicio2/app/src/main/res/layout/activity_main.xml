@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <Button
+                android:text="@string/_1"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:text="@string/_2"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:text="@string/_3"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="@string/_4"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:text="@string/_5"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:text="@string/_6"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="@string/_7"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:text="@string/_8"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:text="@string/_9"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

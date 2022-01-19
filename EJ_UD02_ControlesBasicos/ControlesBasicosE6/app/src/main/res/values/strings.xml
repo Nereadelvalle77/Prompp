@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ControlesBasicosE6</string>
+    <string name="c1">Camara 1:</string>
+    <string name="l1">Luz 1</string>
+    <string name="c2">Camara 2:</string>
+    <string name="l2">Luz 2:</string>
+</resources>

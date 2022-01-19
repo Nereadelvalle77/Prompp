@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ControlesBasicosE7</string>
+    <string name="encender">Encender luces</string>
+    <string name="camaras">Camaras</string>
+    <string name="apagar">Apagar</string>
+    <string name="encender_c">Encender</string>
+    <string name="subir_persianas">Subir persianas</string>
+    <string name="bajar_persianas">Bajar persianas</string>
+</resources>

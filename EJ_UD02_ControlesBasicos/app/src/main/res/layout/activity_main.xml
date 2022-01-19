@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLuces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/encender"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Switch
+        android:id="@+id/swtLuces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:onClick="controlarLuces"
+        app:layout_constraintLeft_toRightOf="@id/txtLuces"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtCamaras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camaras"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/swtLuces"
+        />
+
+    <ToggleButton
+        android:id="@+id/tgbCamaras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textOff="@string/encender_c"
+        android:textOn="@string/apagar"
+        android:onClick="controlarCamaras"
+        app:layout_constraintLeft_toRightOf="@id/txtCamaras"
+        app:layout_constraintTop_toBottomOf="@id/swtLuces"
+        />
+
+    <LinearLayout
+        android:id="@+id/llTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tgbCamaras"
+        >
+
+        <TextView
+            android:id="@+id/txtTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15ºC"
+            android:textSize="70dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btPlus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:scaleType="fitStart"
+                android:src="@mipmap/plus_round"
+                android:background="@color/white"
+                android:onClick="subirTemperatura"
+                />
+
+            <ImageButton
+                android:id="@+id/btMinus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:scaleType="fitStart"
+                android:src="@mipmap/minus_round"
+                android:background="@color/white"
+                android:onClick="bajarTemperatura"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/imgLuces"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/apagada_foreground"
+            />
+
+        <ImageView
+            android:id="@+id/imgCamaras"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/camara"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

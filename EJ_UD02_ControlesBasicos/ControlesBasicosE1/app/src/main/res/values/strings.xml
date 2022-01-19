@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ControlesBasicosE1</string>
+    <string name="sumar">SUMAR</string>
+    <string name="introduce_primer_valor">Introduce PRIMER valor:</string>
+    <string name="introduce_segundo_valor">Introduce SEGUNDO valor:</string>
+</resources>

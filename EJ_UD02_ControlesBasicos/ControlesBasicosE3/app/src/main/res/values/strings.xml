@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ControlesBasicosE3</string>
+    <string name="apagar">APAGAR</string>
+    <string name="encender">ENCENDER</string>
+</resources>
