@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ControlesBasicos2</string>
+    <string name="act01">ACTIVIDAD 01</string>
+    <string name="act02">ACTIVIDAD 02</string>
+    <string name="act04">ACTIVIDAD 04</string>
+    <string name="salir">SALIR</string>
+    <string name="act03">ACTIVIDAD 03</string>
+    <string name="nom">Nombre:</string>
+    <string name="verificar">VERIFICAR</string>
+    <string name="volver">Volver</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="rechaz">RECHAZAR</string>
+    <string name="aceptas_condiciones">Aceptas condiciones:</string>
+    <string name="suma">SUMA</string>
+    <string name="CR">Comprobar Resultado</string>
+    <string name="rstEs">El resultado de la actividad es:</string>
+    <string name="intCr">Intentos correctos:</string>
+    <string name="intInc">Intentos incorrectos:</string>
+</resources>

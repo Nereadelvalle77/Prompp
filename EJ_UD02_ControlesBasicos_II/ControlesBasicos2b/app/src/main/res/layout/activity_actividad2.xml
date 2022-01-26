@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Actividad2">
+
+    <TextView
+        android:id="@+id/lblSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="@string/suma"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSuma" />
+
+    <TextView
+        android:id="@+id/lblS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toRightOf="@id/lblN1"
+        app:layout_constraintTop_toBottomOf="@id/lblSuma" />
+
+    <TextView
+        android:id="@+id/lblN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/lblS"
+        app:layout_constraintTop_toBottomOf="@id/lblSuma" />
+
+    <TextView
+        android:id="@+id/lblI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/lblN2"
+        app:layout_constraintTop_toBottomOf="@id/lblSuma"/>
+
+    <EditText
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginLeft="36dp"
+        app:layout_constraintLeft_toRightOf="@id/lblI"
+        app:layout_constraintTop_toBottomOf="@id/lblSuma" />
+
+    <Button
+        android:id="@+id/btCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/CR"
+        android:onClick="comprobarResultados"
+        app:layout_constraintTop_toBottomOf="@id/lblS"
+        app:layout_constraintLeft_toLeftOf="parent"
+         />
+
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="217dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="100dp"
+        android:drawableLeft="@mipmap/volver"
+        android:onClick="volver0"
+        android:text="@string/volver"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btCR" />
+
+    <TextView
+        android:id="@+id/lblCorrecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intCr"
+        app:layout_constraintTop_toBottomOf="@id/btVolver"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/lblIncorrecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/intInc"
+        app:layout_constraintTop_toBottomOf="@id/lblCorrecto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
