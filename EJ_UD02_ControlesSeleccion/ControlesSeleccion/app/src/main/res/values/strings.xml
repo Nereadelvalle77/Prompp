@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ControlesSeleccion</string>
+    <string name="volver">Volver</string>
+    <string name="e1">Ejercicio1</string>
+    <string name="e2">Ejercicio2</string>
+    <string name="e3">Ejercicio3</string>
+    <string name="paises">Paises</string>
+</resources>
