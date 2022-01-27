@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ControlesBasicos2b">
         <activity
+            android:name=".Actividad4_2"
+            android:exported="true" />
+        <activity
             android:name=".Actividad3_2"
             android:exported="true" />
         <activity

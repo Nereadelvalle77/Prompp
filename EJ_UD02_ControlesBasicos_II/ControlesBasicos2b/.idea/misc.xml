@@ -7,13 +7,20 @@
         <entry key="..\:/DM2/PROMPEI/Evaluacion1/AndroidStudioProjects/ControlesBasicos2b/app/src/main/res/layout/activity_actividad11.xml" value="0.20520833333333333" />
         <entry key="..\:/DM2/PROMPEI/Evaluacion1/AndroidStudioProjects/ControlesBasicos2b/app/src/main/res/layout/activity_actividad2.xml" value="0.36666666666666664" />
         <entry key="..\:/DM2/PROMPEI/Evaluacion1/AndroidStudioProjects/ControlesBasicos2b/app/src/main/res/layout/activity_actividad22.xml" value="0.3029891304347826" />
+        <entry key="app/src/main/res/drawable/huevoPollo_background.xml" value="0.2203125" />
         <entry key="app/src/main/res/layout/activity_actividad1.xml" value="0.12817028985507245" />
         <entry key="app/src/main/res/layout/activity_actividad11.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_actividad2.xml" value="0.12817028985507245" />
         <entry key="app/src/main/res/layout/activity_actividad22.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/activity_actividad3.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_actividad32.xml" value="0.28541666666666665" />
+        <entry key="app/src/main/res/layout/activity_actividad4.xml" value="0.2796875" />
+        <entry key="app/src/main/res/layout/activity_actividad42.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12817028985507245" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/huevo.xml" value="0.2203125" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/huevoPollo.xml" value="0.2203125" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/huevoPollo_round.xml" value="0.2203125" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/huevo_round.xml" value="0.2203125" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21875" />
       </map>
     </option>
