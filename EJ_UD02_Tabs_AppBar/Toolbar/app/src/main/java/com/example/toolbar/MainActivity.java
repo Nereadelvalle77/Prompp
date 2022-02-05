@@ -26,7 +26,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toolbar;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
 
     private ViewPager viewPager;
+
+    private boolean x;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //TABS
-        ViewPager viewPager= findViewById(R.id.viewPager);
+        viewPager= findViewById(R.id.viewPager);
         viewPager.setAdapter(new PageAdapter());
 
         TabLayout tabLayout =findViewById(R.id.tabLayout);
@@ -67,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
         //ELEMENTOS
         viewPager=findViewById(R.id.viewPager);
+
+        x=true;
     }
 
     @Override
@@ -91,7 +98,17 @@ public class MainActivity extends AppCompatActivity {
         {
             case R.id.btBuscar:
                 Log.i("ActionBar","En btBuscar");
-                item.setIcon(getDrawable(R.mipmap.camara2_round));
+                if(x)
+                {
+                    item.setIcon(getDrawable(R.mipmap.camara2_round));
+                    x=false;
+                }
+                else
+                {
+                    item.setIcon(getDrawable(R.mipmap.camara0_round));
+                    x=true;
+                }
+
                 return true;
             case R.id.btOtro:
                 Log.i("ActionBar","En btOtro");
@@ -132,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
         public Object instantiateItem(@NonNull ViewGroup container, int position)
         {
             View page;
+            Log.i("pager","aa");
             switch (position)
             {
                 case 0:
@@ -141,13 +159,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                     page= p_llamadas;
                     break;
-
                 case 1:
                     if(p_chats ==null)
                     {
                         p_chats =(ConstraintLayout) LayoutInflater.from(MainActivity.this).inflate(R.layout.p_chats,container,false);
                     }
                     page= p_chats;
+
                     break;
                 default:
                     if(p_contactos ==null)

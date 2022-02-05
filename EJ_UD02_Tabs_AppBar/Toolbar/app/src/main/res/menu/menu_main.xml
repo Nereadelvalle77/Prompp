@@ -2,6 +2,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.toolbar.MainActivity">
+
+    <item
+        android:id="@+id/action_new_group"
+        android:orderInCategory="100"
+        android:title="New group"
+        app:showAsAction="never" />
+
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

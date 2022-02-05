@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Añadir ListView al contenido de las diferentes paginas contactos"
+        android:text="PACO"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
