@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FicherosEjercicio1</string>
+    <string name="cae">Contenido a escribir:</string>
+    <string name="borrar_fich_ext">Borrar Fich. Ext.</string>
+    <string name="borrar_fich_int">Borrar Fich. Int.</string>
+    <string name="leer_recurso">Leer recurso</string>
+    <string name="leer_fich_ext">Leer Fich. Ext.</string>
+    <string name="leer_fich_int">Leer Fich. Int.</string>
+    <string name="a_adir_fich_ext">Añadir Fich. Ext.</string>
+    <string name="a_adir_fich_int">Añadir Fich. Int.</string>
+    <string name="ECDFE">El contenido del fichero es:</string>
+</resources>
