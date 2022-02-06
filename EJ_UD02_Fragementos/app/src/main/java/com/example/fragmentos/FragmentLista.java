@@ -1,9 +1,11 @@
 package com.example.fragmentos;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +21,8 @@ public class FragmentLista extends Fragment
     private AdaptadorLibro al;
     private ArrayList<Libro> libros;
 
+    private FragmentDescripcion frgDescripcion;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
@@ -31,10 +35,33 @@ public class FragmentLista extends Fragment
     {
         super.onActivityCreated(savedInstanceState);
         lstLibros=(ListView) getView().findViewById(R.id.lstLibros);
+        cargarLibros(((MainActivity)getActivity()).getFrgDescripcion());
+
+        generarEventos();
     }
 
-    //El problema esta aqui
-    public void cargarLibros(FragmentDescripcion frgDescripcion)
+    private void generarEventos()
+    {
+        lstLibros.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                Libro libro=al.getLibros().get(position);
+                if(frgDescripcion!=null)
+                {
+                }
+                else
+                {
+                    Intent intent=new Intent(((MainActivity)getActivity()),Descripcion.class);
+                    intent.putExtra("desccripcion",libro.getDescripcion());
+                    startActivity(intent);
+                }
+            }
+        });
+    }
+
+    private void cargarLibros(FragmentDescripcion frgDescripcion)
     {
 
         libros = new ArrayList<Libro>();
@@ -44,5 +71,6 @@ public class FragmentLista extends Fragment
 
         al=new AdaptadorLibro(getContext(),libros,frgDescripcion);
         lstLibros.setAdapter(al);
+        this.frgDescripcion=frgDescripcion;
     }
 }

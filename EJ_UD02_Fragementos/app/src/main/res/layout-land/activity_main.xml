@@ -28,7 +28,7 @@
         <fragment
             android:id="@+id/frgLista"
             class="com.example.fragmentos.FragmentLista"
-            android:layout_width="300dp"
+            android:layout_width="400dp"
             android:layout_height="match_parent"
             />
 
@@ -36,7 +36,7 @@
             android:id="@+id/frgDescripcion"
             class="com.example.fragmentos.FragmentDescripcion"
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
+            android:layout_height="300dp"
             />
 
     </LinearLayout>

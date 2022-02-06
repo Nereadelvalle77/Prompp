@@ -41,4 +41,8 @@ public class AdaptadorLibro extends ArrayAdapter<Libro>
 
         return (item);
     }
+
+    public ArrayList<Libro> getLibros() {
+        return libros;
+    }
 }

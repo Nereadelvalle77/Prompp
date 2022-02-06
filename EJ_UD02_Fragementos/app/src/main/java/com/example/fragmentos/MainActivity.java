@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity
         frgLista= (FragmentLista) getSupportFragmentManager().findFragmentById(R.id.frgLista);
         frgDescripcion= (FragmentDescripcion) getSupportFragmentManager().findFragmentById(R.id.frgDescripcion);
 
-        //frgLista.cargarLibros(frgDescripcion);
+    }
+
+    public FragmentDescripcion getFrgDescripcion() {
+        return frgDescripcion;
     }
 }
