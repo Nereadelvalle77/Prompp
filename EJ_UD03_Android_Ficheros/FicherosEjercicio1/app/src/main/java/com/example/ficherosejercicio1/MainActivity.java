@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity
             sdDisponible = true;
             sdAccesoEscritura = true;
         }
+        //Solo lectura
         else if (estado.equals(Environment.MEDIA_MOUNTED_READ_ONLY)) {
             sdDisponible = true;
             sdAccesoEscritura = false;
@@ -71,11 +72,14 @@ public class MainActivity extends AppCompatActivity
 
     private void leerSD() {
         try {
+
+            //Carpeta en la que va a leer
             ContextWrapper cw = new ContextWrapper(getApplicationContext());
             File ruta_sd = cw.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
 
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(ruta_sd.getAbsolutePath(), ARCHIVO_EXTERNO))));
 
+            //lee
             StringBuilder txtResult = new StringBuilder();
             String linea = br.readLine();
             while(linea != null) {
@@ -94,9 +98,11 @@ public class MainActivity extends AppCompatActivity
 
     private void escribirSD() {
         try {
+            //Carpeta en la que va a escribir
             ContextWrapper cw = new ContextWrapper(getApplicationContext());
             File ruta_sd = cw.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
 
+            //Crea si no existe y escribe
             OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(new File(ruta_sd.getAbsolutePath(), ARCHIVO_EXTERNO)));
 
             osw.write(txtContenido.getText().toString());
@@ -109,9 +115,11 @@ public class MainActivity extends AppCompatActivity
 
     public void escribirInterno(View view) {
         try {
+            //Fi8chero en el que va a escribir
             FileOutputStream fos = openFileOutput(ARCHIVO_INTERNO, Context.MODE_APPEND);
             OutputStreamWriter osw = new OutputStreamWriter(fos);
 
+            //Escribe
             osw.write(txtContenido.getText().toString() + "\n");
             osw.close();
         }
@@ -122,10 +130,13 @@ public class MainActivity extends AppCompatActivity
 
     public void escribirExterno(View view) {
         comprobarSD();
+        //si tiene espacio y permiso de escirtura
         if(sdDisponible || sdAccesoEscritura) {
+            //si tiene los permisos
             if (ContextCompat.checkSelfPermission(this,Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED)
                 escribirSD();
             else
+                //pide permisos
                 solicitarPermiso
                         (
                                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
@@ -181,6 +192,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    //Lee de recursos solo tienen permiso de lectura
     public void leerRecurso(View view) {
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.datos)));
@@ -217,6 +229,8 @@ public class MainActivity extends AppCompatActivity
             }
     }
 
+
+    //Pedir permisos
     private static void solicitarPermiso (final String permiso,
                                           String justificacion,
                                           final int requestCode,
@@ -239,6 +253,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    //Gestiona permisos
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == SOLICITUD_PERMISO_ESCRIBIR_SD) {
