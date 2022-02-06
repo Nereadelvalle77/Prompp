@@ -14,10 +14,13 @@
         app:layout_constraintTop_toTopOf="parent"
         >
 
-        <EditText
-            android:id="@+id/edtN1"
+        <TextView
+            android:id="@+id/txtN1"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:textSize="27dp"
+            android:textColor="@color/black"
+            android:inputType="number"
             />
 
         <TextView
@@ -29,10 +32,13 @@
             android:textColor="@color/black"
             />
 
-        <EditText
-            android:id="@+id/edtN2"
+        <TextView
+            android:id="@+id/txtN2"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:textSize="27dp"
+            android:textColor="@color/black"
+            android:inputType="number"
             />
 
         <TextView
@@ -47,6 +53,7 @@
             android:id="@+id/edtResultado"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:inputType="number"
             />
 
     </LinearLayout>
@@ -57,10 +64,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:text="Comprobar respuesta"
+        android:onClick="comprobarResultado"
         app:layout_constraintTop_toBottomOf="@id/llOperaciones"
         />
 
     <TextView
+        android:id="@+id/txtAciertos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
