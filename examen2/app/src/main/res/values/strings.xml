@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">examen2</string>
+    <string name="salir">Salir</string>
+    <string name="ver_el_tiempo">Ver el tiempo</string>
+    <string name="gestionar_base_de_datos">Gestionar base de datos</string>
+    <string name="no_cerrar">No se cerrara la aplicacion</string>
+    <string name="ver_pronto">Esperamos verle pronto de nuevo</string>
+    <string name="adios">Adios</string>
+    <string name="crear_cliente">Crear cliente</string>
+    <string name="modificar_cliente">Modificar cliente</string>
+    <string name="crear_facturas">Crear facturas</string>
+    <string name="consultar_facturas">Consultar facturas</string>
+    <string name="creando_cliente">Creando cliente</string>
+    <string name="nombre">Nombre:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="dni">DNI:</string>
+    <string name="facturas">Facturas:</string>
+    <string name="modificando">Modificando cliente</string>
+    <string name="fade">Facturas del cliente</string>
+    <string name="num_fac">Num Fac</string>
+    <string name="d">DNI</string>
+    <string name="nom">Nombre</string>
+    <string name="concepto">Concepto</string>
+    <string name="valor">Valor</string>
+    <string name="crear_factura">Crear Factura</string>
+    <string name="cfr">Creando factura</string>
+    <string name="concep">Concepto:</string>
+    <string name="val">Valor:</string>
+    <string name="mdcl">Modificar cliente</string>
+</resources>
