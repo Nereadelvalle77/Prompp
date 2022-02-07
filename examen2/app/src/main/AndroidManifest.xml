@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.examen2">
 
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,19 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Examen2">
         <activity
-            android:name=".ConsultaFacturas"
+            android:name=".BaseDeDatos.ConsultaFacturas"
             android:exported="false" />
         <activity
-            android:name=".CrearFactura"
+            android:name=".BaseDeDatos.CrearFactura"
             android:exported="false" />
         <activity
-            android:name=".CrearCliente"
+            android:name=".BaseDeDatos.CrearCliente"
             android:exported="false" />
         <activity
-            android:name=".GestorXml"
+            android:name=".BaseDeDatos.BBDD"
             android:exported="false" />
         <activity
-            android:name=".BBDD"
+            android:name=".Tiempo.GestorXML"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

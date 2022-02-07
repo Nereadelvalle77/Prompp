@@ -1,4 +1,4 @@
-package com.example.examen2;
+package com.example.examen2.BaseDeDatos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.examen2.R;
 
 import java.util.ArrayList;
 

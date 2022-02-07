@@ -1,4 +1,4 @@
-package com.example.examen2;
+package com.example.examen2.BaseDeDatos;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.examen2.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +35,7 @@ public class AdaptadorFactura extends ArrayAdapter<Factura>
         View item = inflater.inflate(R.layout.listitem_cliente, null);
 
         TextView txtNum=item.findViewById(R.id.txtNum);
-        txtNum.setText(facturas.get(position).getNum());
+        txtNum.setText(String.valueOf(facturas.get(position).getNum()));
 
         TextView txtConcepto=item.findViewById(R.id.txtConcepto);
         txtConcepto.setText(facturas.get(position).getConcepto());

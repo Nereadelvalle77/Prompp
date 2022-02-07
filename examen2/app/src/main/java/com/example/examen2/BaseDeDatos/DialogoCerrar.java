@@ -1,4 +1,4 @@
-package com.example.examen2;
+package com.example.examen2.BaseDeDatos;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -10,6 +10,8 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+
+import com.example.examen2.R;
 
 public class DialogoCerrar extends DialogFragment {
 

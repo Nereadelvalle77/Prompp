@@ -1,4 +1,4 @@
-package com.example.examen2;
+package com.example.examen2.BaseDeDatos;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

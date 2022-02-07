@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.examen2.BaseDeDatos.BBDD;
+import com.example.examen2.BaseDeDatos.DialogoCerrar;
+import com.example.examen2.Tiempo.GestorXML;
+
  public class MainActivity extends AppCompatActivity implements DialogoCerrar.OnDialogoCerrarListener
  {
 
@@ -18,13 +22,13 @@ import android.widget.Toast;
 
     public void gestionarBD(View v)
     {
-        Intent intent = new Intent(MainActivity.this,BBDD.class);
+        Intent intent = new Intent(MainActivity.this, BBDD.class);
         startActivity(intent);
     }
 
      public void verTiempo(View v)
      {
-         Intent intent = new Intent(MainActivity.this,GestorXml.class);
+         Intent intent = new Intent(MainActivity.this, GestorXML.class);
          startActivity(intent);
      }
 

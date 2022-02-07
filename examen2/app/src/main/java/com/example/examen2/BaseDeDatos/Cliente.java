@@ -1,6 +1,4 @@
-package com.example.examen2;
-
-import android.os.Parcelable;
+package com.example.examen2.BaseDeDatos;
 
 import java.io.Serializable;
 import java.util.ArrayList;

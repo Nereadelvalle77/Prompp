@@ -28,4 +28,10 @@
     <string name="concep">Concepto:</string>
     <string name="val">Valor:</string>
     <string name="mdcl">Modificar cliente</string>
+    <string name="el_tiempo">EL TIEMPO</string>
+    <string name="bilbo">bilbao-bilbo</string>
+    <string name="vitoria">vitoria-gasteiz</string>
+    <string name="fecha_hora">FECHA/HORA:</string>
+    <string name="tiempo_en">Tiempo en:</string>
+    <string name="temperatura">Temperatura:</string>
 </resources>
